@@ -137,6 +137,8 @@ function updateUserStats(userProgress) {
   userProgress.completedQuestions = completedQuestions;
   userProgress.completedWeekIds = completedWeekIds;
   userProgress.completedWeeks = completedWeekIds.length;
+  
+  return userProgress;
 }
 
 module.exports = router; 
