@@ -20,6 +20,12 @@ const UserProgressSchema = new mongoose.Schema({
     unique: true
   },
   userName: { type: String, required: true },
+  userClass: { 
+    type: String, 
+    required: true,
+    default: 'M',
+    enum: ['M', 'L']
+  },
   totalPoints: { type: Number, default: 0 },
   completedQuestions: { type: Number, default: 0 },
   completedWeeks: { type: Number, default: 0 },
